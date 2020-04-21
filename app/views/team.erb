@@ -1,8 +1,8 @@
-<h1><%= heroes["team"]["name"]%></h1><br/>
+<h1><%= @heroes["team"]["name"]%></h1><br/>
 
-  <h2>Team Motto: <%= heroes["team"]["motto"]%><br/>
+  <h2>Team Motto: <%= @heroes["team"]["motto"]%><br/>
   
-  <h2> <% heroes.each do |hero| %>
+  <h2> <% @heroes.each do |hero| %>
   <h2>Hero Name: <%= heroes["team"]["heroes"][]["name"]%></h2><br/>
   <p>Hero Power: <%= heroes["team"]["heroes"][]["power"]%>></p>
   <p>Hero Biography: <%= heroes["team"]["heroes"][]["biography"]%>></p><br/>
