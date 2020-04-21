@@ -3,7 +3,7 @@
   <h2>Team Motto: <%= @heroes["team"]["motto"]%><br/><br/>
   
   <%i = 0 %>
-  <h2> <% @heroes.each do |hero| %>
+  <h2> <% @heroes["team"].each do |hero| %>
   <%binding.pry%>
   <h2>Hero Name: <%= @heroes["team"]["heroes"][i]["name"]%></h2>
   <p>Hero Power: <%= @heroes["team"]["heroes"][i]["power"]%></p>
