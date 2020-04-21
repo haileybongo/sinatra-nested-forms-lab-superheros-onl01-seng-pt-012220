@@ -3,16 +3,10 @@
   <h2>Team Motto: <%= heroes["team"]["motto"]%><br/>
   
   <h2> <% heroes.each do |hero| %>
-  <h2>Hero Name: <%= heroes["team"]["heroes"][]["name"]%></h2>
+  <h2>Hero Name: <%= heroes["team"]["heroes"][]["name"]%></h2><br/>
   <p>Hero Power: <%= heroes["team"]["heroes"][]["power"]%>></p>
-  <p>Hero Biography: <%= heroes["team"]["heroes"][]["biography"]%>></p>
+  <p>Hero Biography: <%= heroes["team"]["heroes"][]["biography"]%>></p><br/>
+      <% end %>
 </h2>
 <br/>
 
-<h1>Ship Information </h1>
-   <h2> <% @ships.each do |ship| %>
-    <p>Name: <%= ship.name %></p>
-    <p>Type: <%= ship.type %></p>
-    <p>Booty: <%= ship.booty %></p>
-    <% end %>
-  </h2>
