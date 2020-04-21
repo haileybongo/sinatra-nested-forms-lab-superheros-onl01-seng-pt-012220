@@ -4,7 +4,7 @@
   
   <%i = 0 %>
   <h2> <% @heroes.each do |hero| %>
-  <h2>Hero Name: <%= @heroes["team"]["heroes"][i]["name"]%></h2><br/>
+  <h2>Hero Name: <%= @heroes["heroes"][i]["name"]%></h2><br/>
   <p>Hero Power: <%= @heroes["team"]["heroes"][i]["power"]%>></p>
   <p>Hero Biography: <%= @heroes["team"]["heroes"][i]["biography"]%>></p><br/>
   <%i += 1%>
