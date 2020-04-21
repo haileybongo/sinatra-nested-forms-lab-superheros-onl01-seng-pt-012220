@@ -8,7 +8,7 @@ class App < Sinatra::Base
     erb :super_hero
   end
   
-  post '/teams' do
+  post '/team' do
     heroes = params[]
     binding.pry
     erb :team
