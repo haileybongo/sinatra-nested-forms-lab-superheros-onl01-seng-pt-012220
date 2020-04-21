@@ -5,9 +5,9 @@
   <%i = 0 %>
   <h2> <% @heroes["heroes"].each do |hero| %>
   <%binding.pry%>
-  <h2>Hero Name: <%= @heroes["team"]["heroes"][i]["name"]%></h2>
-  <p>Hero Power: <%= @heroes["team"]["heroes"][i]["power"]%></p>
-  <p>Hero Biography: <%= @heroes["team"]["heroes"][i]["biography"] %></p><br/>
+  <h2>Hero Name: <%= @heroes[i]["name"]%></h2>
+  <p>Hero Power: <%= @heroes[i]["power"]%></p>
+  <p>Hero Biography: <%= @heroes[i]["biography"] %></p><br/>
       <%i += 1 %> 
       <% end %>
 </h2>
